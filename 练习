@@ -1,0 +1,20 @@
+def f(x):
+  print("x value=",x)
+  currentscore = int(x)
+  index=0
+  if 0<currentscore<=1:
+    return 10
+  if 1<currentscore<=10:
+    return 9.5+0.5*currentscore
+  if 10<currentscore<=50:
+    return 11.5+0.3*currentscore
+  elif currentscore>50:
+    return 10.7+0.1*currentscore
+input_value = input("kg=")
+out_value = f(input_value)
+print("收费为",out_value)
+
+
+
+
+
