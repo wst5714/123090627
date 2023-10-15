@@ -22,8 +22,8 @@ def f(a,b,N,operatorFunc):   #define a function to culculate
 str_N = input("enter a Integer [N]:")   #assign the value of str_N by inputing an integer
 while not str_N.isdigit():   #if str_N is not an integer greater than 0, ask the user to input another value till a correct value is inputted
     str_N=input("enter an integer greater than 0 to represent N:")   #ask the user to input a correct value and assign the new value to str_N
-a = b = 0
-while(not a<b):
+a = b = 0   #set a mark to compare the value of"a" "b" 
+while(not a<b):   
     str_a = input("enter a number [a]:")   #assign the value of str_a by inputing an number
     while not is_number(str_a):   #if str_a is not a number, ask the user to input another value till a correct value is inputted
         str_a=input("please enter a number to represent a:")   #ask the user to input a correct value and assign the new value to str_a
@@ -31,8 +31,9 @@ while(not a<b):
     str_b = input("enter b number [b]:")   #assign the value of str_a by inputing an number
     while not is_number(str_b):   #if str_N is not a number, ask the user to input another value till a correct value is inputted
         str_b=input("please enter a number to represent b:")   #ask the user to input a correct value and assign the new value to str_b
-    a = float(str_a)
+    a = float(str_a)   #assign the value of str_a 
     b = float(str_b)
+    print("a must smaller than b")
 
 func_str_name = "sin"   #assign the default value of func_str_name to sin
 func_str_name = input("please enter an string [sin/cos/tan] default sin:")  #assign the value of func_str_name by inputing a trigonometric functions
